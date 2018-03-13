@@ -72,7 +72,7 @@ elif holding == 1:
     holding = 0
 out = out.ix[:leng-2, 0]
 out = out.astype(int)
-###############################67    109
+###############################48    109
 print(out)
 print("assets  ", assets)
 print("holding ",holding)
