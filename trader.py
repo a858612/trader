@@ -17,7 +17,8 @@ if __name__ == '__main__':
                         help='output file name')
     args = parser.parse_args()
 ########################################################
-df = pd.read_csv('testing_data.csv',header=None)
+#df = pd.read_csv('testing_data.csv',header=None)
+df = pd.read_csv(args.testing,header=None)
 firstV= df.iloc[0,0]
 out = df
 leng = len(out)
@@ -75,4 +76,4 @@ out = out.astype(int)
 print(out)
 print("assets  ", assets)
 print("holding ",holding)
-out.to_csv("output.csv")
+out.to_csv("output.csv",index=False)
